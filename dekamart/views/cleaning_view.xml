@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- dekamart.cleaningservice inherit form view -->
+<record id="dekamart_cleanigservice_view_form_inherit" model="ir.ui.view">
+    <field name="name">dekamart.cleaningservice.inherit.view.form</field>
+    <field name="model">dekamart.cleaningservice</field>
+    <field name="inherit_id" ref="dekamart_person_view_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='name']" position="before">
+            <field name="id_cln"/>
+        </xpath>        
+    </field>
+</record>
+
+<!-- dekamart.cleaningservice inherit tree view -->
+<record id="dekamart_cleaningservice_view_tree_inherit" model="ir.ui.view">
+    <field name="name">dekamart.cleaningservice.inherit.view.tree</field>
+    <field name="model">dekamart.cleaningservice</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="dekamart_person_view_tree"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='name']" position="before">
+            <field name="id_cln"/>
+        </xpath>        
+    </field>
+</record>
+
+    <!-- dekamart.cleaningservice action window -->
+    <record id="dekamart_cleaningservice_action" model="ir.actions.act_window">
+        <field name="name">Cleaning Service</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dekamart.cleaningservice</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="dekamart_cleaning_menu_act" 
+            name="Cleaning Service" 
+            parent="dekamart_pegawai_menu_categ" 
+            action="dekamart_cleaningservice_action" 
+            sequence="30"/>
+
+</odoo>

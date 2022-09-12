@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dekamart_kelompokbarang,access.dekamart.kelompokbarang,model_dekamart_kelompokbarang,,1,1,1,1
+access_dekamart_barang,access.dekamart.barang,model_dekamart_barang,,1,1,1,1
+access_dekamart_person,access.dekamart.person,model_dekamart_person,,1,1,1,1
+access_dekamart_kasir,access.dekamart.kasir,model_dekamart_kasir,,1,1,1,1
+access_dekamart_cleaningservice,access.dekamart.cleaningservice,model_dekamart_cleaningservice,,1,1,1,1
+access_dekamart_supplier,access.dekamart.supplier,model_dekamart_supplier,,1,1,1,1
+access_dekamart_penjualan,access.dekamart.penjualan,model_dekamart_penjualan,,1,1,1,1
+access_dekamart_detailpenjualan,access.dekamart.detailpenjualan,model_dekamart_detailpenjualan,,1,1,1,1
+
+access_dekamart_barangdatang,access.dekamart.barangdatang,model_dekamart_barangdatang,,1,1,1,1
